@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Parallelepiped : Figure
+public class Parallelepiped : Figure // INHERITANCE
 {
-    public float width { get; private set; }
-    public float height { get; private set; }
-    public override float Square()
+    public float width { get; private set; } // ENCAPSULATION
+    public float height { get; private set; } // ENCAPSULATION
+
+    // ABSTRACTION
+    public override float Square() // POLYMORPHISM
     {
         return width * height;
     }
 
-    public override float Perimeter()
+    // ABSTRACTION
+    public override float Perimeter() // POLYMORPHISM
     {
         return width * 2 + height * 2;
     }

@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ellipse : Figure
+public class Ellipse : Figure // INHERITANCE
 {
 
-    public float radiusX { get; private set; }
-    public float radiusY { get; private set; }
+    public float radiusX { get; private set; } // ENCAPSULATION
+    public float radiusY { get; private set; } // ENCAPSULATION
 
-    public override float Square()
+    // ABSTRACTION
+    public override float Square() // POLYMORPHISM
     {
         return Mathf.PI * radiusX * radiusY;
     }
 
-    public override float Perimeter()
+    // ABSTRACTION
+    public override float Perimeter() // POLYMORPHISM
     {
         return Mathf.PI * Mathf.Sqrt(2 * (radiusX * radiusX + radiusY * radiusY));
     }
