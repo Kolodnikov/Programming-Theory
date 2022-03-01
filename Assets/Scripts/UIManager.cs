@@ -27,4 +27,5 @@ public class UIManager : MonoBehaviour
         txtEllipseP.text = "P = " + ellipse.Perimeter().ToString();
         txtEllipseS.text = "S = " + ellipse.Square().ToString();
     }
+
 }
